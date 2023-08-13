@@ -1,0 +1,54 @@
+.default__form {
+  width: 50%;
+  max-width: 600px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+  animation: 0.5s ease-out;
+  animation-name: fadeIn;
+}
+
+.default__form:focus {
+  outline: none;
+  border: 2px solid rgb(72, 74, 76) !important;
+}
+select {
+  appearance: none;
+}
+
+input:disabled,
+select:disabled {
+  background-color: rgb(229, 231, 235);
+}
+
+input:not(:disabled),
+select:not(:disabled) {
+  background-color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 320px) {
+  .default__form {
+    min-width: 250px;
+  }
+}
+
+@media (min-width: 375px) {
+  .default__form {
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 414px) {
+  .default__form {
+    min-width: 340px;
+  }
+}

@@ -1,0 +1,10 @@
+.flex__summary {
+  gap: 3em;
+}
+
+@media (max-width: 900px) {
+  .flex__summary {
+    gap: 1em;
+    flex-direction: column;
+  }
+}

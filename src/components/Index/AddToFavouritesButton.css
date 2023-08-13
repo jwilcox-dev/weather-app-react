@@ -1,0 +1,23 @@
+.atf__button {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 208, 0),
+    rgb(255, 208, 0)
+  );
+  background-repeat: no-repeat;
+  background-size: 0 50%;
+}
+
+.atf__button:hover {
+  animation: swipeColour 0.3s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes swipeColour {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}

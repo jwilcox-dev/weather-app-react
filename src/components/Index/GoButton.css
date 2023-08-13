@@ -1,0 +1,20 @@
+.go__button {
+  transition: all 0.2s ease-in;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 176, 80) 0%,
+    rgb(0, 146, 80) 100%
+  );
+}
+
+.go__button:hover {
+  opacity: 0.8;
+}
+
+.go__button:disabled {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(255, 10, 10) 0%,
+    rgb(215, 10, 10) 100%
+  );
+}

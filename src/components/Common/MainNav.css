@@ -1,0 +1,14 @@
+.nav__button {
+  transition: all 0.2s ease-in;
+}
+
+.login__button:hover,
+.register__button:hover {
+  color: white;
+  transform: translateX(-2px);
+}
+
+.home__button:hover {
+  opacity: 0.6;
+  transform: translateX(2px);
+}
